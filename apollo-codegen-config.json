@@ -1,0 +1,31 @@
+{
+  "schemaNamespace" : "AIRoutes",
+  "input" : {
+    "operationSearchPaths" : [
+      "generated-graphql/mutations.graphql",
+      "generated-graphql/queries.graphql",
+      "generated-graphql/subscriptions.graphql",
+      "generated-graphql/fragments.graphql"
+    ],
+    "schemaSearchPaths" : [
+      "generated-graphql/schema.graphqls",
+      "generated-graphql/appsync.graphqls"
+    ]
+  },
+  "output" : {
+    "testMocks" : {
+      "none" : {
+      }
+    },
+    "schemaTypes" : {
+      "path" : "./AIRoutes",
+      "moduleType" : {
+        "swiftPackageManager" : {}
+      }
+    },
+    "operations" : {
+      "inSchemaModule" : {
+      }
+    }
+  }
+}

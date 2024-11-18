@@ -1,0 +1,22 @@
+subscription OnCreateAssistantResponseAssistantChat($conversationId: ID!) {
+  onCreateAssistantResponseAssistantChat(conversationId: $conversationId) {
+    associatedUserMessageId
+    contentBlockDeltaIndex
+    contentBlockDoneAtIndex
+    contentBlockIndex
+    contentBlockText
+    contentBlockToolUse {
+      input
+      name
+      toolUseId
+    }
+    conversationId
+    errors {
+      errorType
+      message
+    }
+    id
+    owner
+    stopReason
+  }
+}

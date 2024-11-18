@@ -1,0 +1,7 @@
+fragment Conversation on ConversationAssistantChat {
+  id
+  name
+  metadata
+  createdAt
+  updatedAt
+}

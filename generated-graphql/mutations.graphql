@@ -1,0 +1,112 @@
+mutation CreateConversationAssistantChat(
+  $input: CreateConversationAssistantChatInput!
+) {
+  createConversationAssistantChat(input: $input) {
+    id
+    name
+    metadata
+    createdAt
+    updatedAt
+  }
+}
+
+mutation SendMessage(
+  $aiContext: AWSJSON
+  $content: [AmplifyAIContentBlockInput]
+  $conversationId: ID!
+  $toolConfiguration: AmplifyAIToolConfigurationInput
+) {
+  assistantChat(
+    aiContext: $aiContext
+    content: $content
+    conversationId: $conversationId
+    toolConfiguration: $toolConfiguration
+  ) {
+    aiContext
+    content {
+      document {
+        format
+        name
+        source {
+          bytes
+        }
+      }
+      image {
+        format
+        source {
+          bytes
+        }
+      }
+      text
+      toolResult {
+        content {
+          document {
+            format
+            name
+            source {
+              bytes
+            }
+          }
+          image {
+            format
+            source {
+              bytes
+            }
+          }
+          json
+          text
+        }
+        status
+        toolUseId
+      }
+      toolUse {
+        input
+        name
+        toolUseId
+      }
+    }
+    conversationId
+    createdAt
+    id
+    owner
+    role
+    updatedAt
+    toolConfiguration {
+      tools {
+        toolSpec {
+          description
+          inputSchema {
+            json
+          }
+          name
+        }
+      }
+    }
+  }
+}
+
+mutation DeleteConversationAssistantChat(
+  $input: DeleteConversationAssistantChatInput!
+) {
+  deleteConversationAssistantChat(input: $input) {
+    id
+    name
+    metadata
+    owner
+    createdAt
+    updatedAt
+  }
+}
+
+mutation UpdateConversationAssistantChat(
+  $input: UpdateConversationAssistantChatInput!
+) {
+  updateConversationAssistantChat(input: $input) {
+    createdAt
+    id
+    metadata
+    name
+    owner
+    updatedAt
+  }
+}

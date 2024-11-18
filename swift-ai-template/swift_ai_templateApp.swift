@@ -1,17 +1,22 @@
-//
-//  swift_ai_templateApp.swift
-//  swift-ai-template
-//
-//  Created by Saultz, Ian on 9/19/24.
-//
-
+import AWSCognitoAuthPlugin
+import Amplify
+import Authenticator
 import SwiftUI
 
 @main
-struct swift_ai_templateApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
+struct MyApp: App {
+  init() {
+    do {
+      try Amplify.add(plugin: AWSCognitoAuthPlugin())
+      try Amplify.configure(with: .amplifyOutputs)
+    } catch {
+      print("Unable to configure Amplify \(error)")
     }
+  }
+
+  var body: some Scene {
+    WindowGroup {
+      ContentView()
+    }
+  }
 }

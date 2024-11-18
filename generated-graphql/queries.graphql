@@ -1,0 +1,106 @@
+query GenerateRecipe($description: String) {
+  generateRecipe(description: $description) {
+    name
+    ingredients
+    instructions
+  }
+}
+
+query GetConversationAssistantChat($id: ID!) {
+  getConversationAssistantChat(id: $id) {
+    ...Conversation
+  }
+}
+
+query ListConversationAssistantChats(
+  $filter: ModelConversationAssistantChatFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listConversationAssistantChats(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      ...Conversation
+    }
+    nextToken
+  }
+}
+
+query ListConversationMessageAssistantChats(
+  $filter: ModelConversationMessageAssistantChatFilterInput
+  $limit: Int
+  $nextToken: String
+) {
+  listConversationMessageAssistantChats(
+    filter: $filter
+    limit: $limit
+    nextToken: $nextToken
+  ) {
+    items {
+      aiContext
+      associatedUserMessageId
+      content {
+        document {
+          format
+          name
+          source {
+            bytes
+          }
+        }
+        image {
+          format
+          source {
+            bytes
+          }
+        }
+        text
+        toolResult {
+          content {
+            document {
+              format
+              name
+              source {
+                bytes
+              }
+            }
+            image {
+              format
+              source {
+                bytes
+              }
+            }
+            json
+            text
+          }
+          status
+          toolUseId
+        }
+        toolUse {
+          input
+          name
+          toolUseId
+        }
+      }
+      conversationId
+      createdAt
+      id
+      owner
+      role
+      updatedAt
+      toolConfiguration {
+        tools {
+          toolSpec {
+            description
+            inputSchema {
+              json
+            }
+            name
+          }
+        }
+      }
+    }
+  }
+}

@@ -6,6 +6,19 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		90128A862CEA5C0E00B95DF3 /* AIRoutes in Frameworks */ = {isa = PBXBuildFile; productRef = 90128A852CEA5C0E00B95DF3 /* AIRoutes */; };
+		90670EE82C9D284A000308D3 /* Apollo in Frameworks */ = {isa = PBXBuildFile; productRef = 90670EE72C9D284A000308D3 /* Apollo */; };
+		90670EEA2C9D284A000308D3 /* ApolloAPI in Frameworks */ = {isa = PBXBuildFile; productRef = 90670EE92C9D284A000308D3 /* ApolloAPI */; };
+		907625372C9D1B2200538B00 /* AWSAPIPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 907625362C9D1B2200538B00 /* AWSAPIPlugin */; };
+		907625392C9D1B2200538B00 /* AWSCognitoAuthPlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 907625382C9D1B2200538B00 /* AWSCognitoAuthPlugin */; };
+		9076253B2C9D1B2200538B00 /* AWSPluginsCore in Frameworks */ = {isa = PBXBuildFile; productRef = 9076253A2C9D1B2200538B00 /* AWSPluginsCore */; };
+		9076253D2C9D1B2200538B00 /* AWSS3StoragePlugin in Frameworks */ = {isa = PBXBuildFile; productRef = 9076253C2C9D1B2200538B00 /* AWSS3StoragePlugin */; };
+		9076253F2C9D1B2200538B00 /* Amplify in Frameworks */ = {isa = PBXBuildFile; productRef = 9076253E2C9D1B2200538B00 /* Amplify */; };
+		907625422C9D1B5E00538B00 /* Authenticator in Frameworks */ = {isa = PBXBuildFile; productRef = 907625412C9D1B5E00538B00 /* Authenticator */; };
+		90960B4C2C9D28DD00448652 /* AWSAppSyncApolloExtensions in Frameworks */ = {isa = PBXBuildFile; productRef = 90960B4B2C9D28DD00448652 /* AWSAppSyncApolloExtensions */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		907625192C9D1A6100538B00 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +65,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				907625372C9D1B2200538B00 /* AWSAPIPlugin in Frameworks */,
+				90960B4C2C9D28DD00448652 /* AWSAppSyncApolloExtensions in Frameworks */,
+				9076253F2C9D1B2200538B00 /* Amplify in Frameworks */,
+				90670EEA2C9D284A000308D3 /* ApolloAPI in Frameworks */,
+				907625422C9D1B5E00538B00 /* Authenticator in Frameworks */,
+				907625392C9D1B2200538B00 /* AWSCognitoAuthPlugin in Frameworks */,
+				9076253B2C9D1B2200538B00 /* AWSPluginsCore in Frameworks */,
+				90670EE82C9D284A000308D3 /* Apollo in Frameworks */,
+				9076253D2C9D1B2200538B00 /* AWSS3StoragePlugin in Frameworks */,
+				90128A862CEA5C0E00B95DF3 /* AIRoutes in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -112,6 +135,16 @@
 			);
 			name = "swift-ai-template";
 			packageProductDependencies = (
+				907625362C9D1B2200538B00 /* AWSAPIPlugin */,
+				907625382C9D1B2200538B00 /* AWSCognitoAuthPlugin */,
+				9076253A2C9D1B2200538B00 /* AWSPluginsCore */,
+				9076253C2C9D1B2200538B00 /* AWSS3StoragePlugin */,
+				9076253E2C9D1B2200538B00 /* Amplify */,
+				907625412C9D1B5E00538B00 /* Authenticator */,
+				90670EE72C9D284A000308D3 /* Apollo */,
+				90670EE92C9D284A000308D3 /* ApolloAPI */,
+				90960B4B2C9D28DD00448652 /* AWSAppSyncApolloExtensions */,
+				90128A852CEA5C0E00B95DF3 /* AIRoutes */,
 			);
 			productName = "swift-ai-template";
 			productReference = 907625072C9D1A5F00538B00 /* swift-ai-template.app */;
@@ -195,6 +228,13 @@
 			);
 			mainGroup = 907624FE2C9D1A5F00538B00;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */,
+				907625402C9D1B5E00538B00 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */,
+				90670EE62C9D284A000308D3 /* XCRemoteSwiftPackageReference "apollo-ios" */,
+				90960B4A2C9D28DD00448652 /* XCRemoteSwiftPackageReference "aws-appsync-apollo-extensions-swift" */,
+				90128A842CEA5C0E00B95DF3 /* XCLocalSwiftPackageReference "AIRoutes" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 907625082C9D1A5F00538B00 /* Products */;
 			projectDirPath = "";
@@ -591,6 +631,100 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		90128A842CEA5C0E00B95DF3 /* XCLocalSwiftPackageReference "AIRoutes" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = AIRoutes;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		90670EE62C9D284A000308D3 /* XCRemoteSwiftPackageReference "apollo-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apollographql/apollo-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.15.1;
+			};
+		};
+		907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-swift";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.41.1;
+			};
+		};
+		907625402C9D1B5E00538B00 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/amplify-ui-swift-authenticator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.7;
+			};
+		};
+		90960B4A2C9D28DD00448652 /* XCRemoteSwiftPackageReference "aws-appsync-apollo-extensions-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/aws-amplify/aws-appsync-apollo-extensions-swift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		90128A852CEA5C0E00B95DF3 /* AIRoutes */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = AIRoutes;
+		};
+		90670EE72C9D284A000308D3 /* Apollo */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90670EE62C9D284A000308D3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = Apollo;
+		};
+		90670EE92C9D284A000308D3 /* ApolloAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90670EE62C9D284A000308D3 /* XCRemoteSwiftPackageReference "apollo-ios" */;
+			productName = ApolloAPI;
+		};
+		907625362C9D1B2200538B00 /* AWSAPIPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSAPIPlugin;
+		};
+		907625382C9D1B2200538B00 /* AWSCognitoAuthPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSCognitoAuthPlugin;
+		};
+		9076253A2C9D1B2200538B00 /* AWSPluginsCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSPluginsCore;
+		};
+		9076253C2C9D1B2200538B00 /* AWSS3StoragePlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = AWSS3StoragePlugin;
+		};
+		9076253E2C9D1B2200538B00 /* Amplify */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 907625352C9D1B2200538B00 /* XCRemoteSwiftPackageReference "amplify-swift" */;
+			productName = Amplify;
+		};
+		907625412C9D1B5E00538B00 /* Authenticator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 907625402C9D1B5E00538B00 /* XCRemoteSwiftPackageReference "amplify-ui-swift-authenticator" */;
+			productName = Authenticator;
+		};
+		90960B4B2C9D28DD00448652 /* AWSAppSyncApolloExtensions */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 90960B4A2C9D28DD00448652 /* XCRemoteSwiftPackageReference "aws-appsync-apollo-extensions-swift" */;
+			productName = AWSAppSyncApolloExtensions;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 907624FF2C9D1A5F00538B00 /* Project object */;
 }

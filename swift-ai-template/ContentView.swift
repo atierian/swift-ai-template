@@ -1,24 +1,11 @@
-//
-//  ContentView.swift
-//  swift-ai-template
-//
-//  Created by Saultz, Ian on 9/19/24.
-//
-
+import Amplify
+import Authenticator
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+  var body: some View {
+    Authenticator { state in
+      AIRoutesView()
     }
-}
-
-#Preview {
-    ContentView()
+  }
 }
